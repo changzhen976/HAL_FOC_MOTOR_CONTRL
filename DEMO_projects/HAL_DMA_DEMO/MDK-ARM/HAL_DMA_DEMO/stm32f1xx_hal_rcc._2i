@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include
+-I.\RTE\_HAL_DMA_DEMO
+-I"D:\Program Files\STM32\Keil\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include"
+-I"D:\Program Files\STM32\Keil\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include"
+-D__UVISION_VERSION="531" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xB
+-o hal_dma_demo\stm32f1xx_hal_rcc.o --omf_browse hal_dma_demo\stm32f1xx_hal_rcc.crf --depend hal_dma_demo\stm32f1xx_hal_rcc.d --feedback "HAL_DMA_DEMO\HAL_DMA_DEMO.fed" "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c"

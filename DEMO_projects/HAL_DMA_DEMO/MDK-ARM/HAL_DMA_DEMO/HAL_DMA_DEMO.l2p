@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"hal_dma_demo\startup_stm32f103xb.o"
+"hal_dma_demo\main.o"
+"hal_dma_demo\gpio.o"
+"hal_dma_demo\dma.o"
+"hal_dma_demo\usart.o"
+"hal_dma_demo\stm32f1xx_it.o"
+"hal_dma_demo\stm32f1xx_hal_msp.o"
+"hal_dma_demo\stm32f1xx_hal_gpio_ex.o"
+"hal_dma_demo\stm32f1xx_hal_tim.o"
+"hal_dma_demo\stm32f1xx_hal_tim_ex.o"
+"hal_dma_demo\stm32f1xx_hal_uart.o"
+"hal_dma_demo\stm32f1xx_hal.o"
+"hal_dma_demo\stm32f1xx_hal_rcc.o"
+"hal_dma_demo\stm32f1xx_hal_rcc_ex.o"
+"hal_dma_demo\stm32f1xx_hal_gpio.o"
+"hal_dma_demo\stm32f1xx_hal_dma.o"
+"hal_dma_demo\stm32f1xx_hal_cortex.o"
+"hal_dma_demo\stm32f1xx_hal_pwr.o"
+"hal_dma_demo\stm32f1xx_hal_flash.o"
+"hal_dma_demo\stm32f1xx_hal_flash_ex.o"
+"hal_dma_demo\stm32f1xx_hal_exti.o"
+"hal_dma_demo\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "HAL_DMA_DEMO\HAL_DMA_DEMO.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HAL_DMA_DEMO.map" -o HAL_DMA_DEMO\HAL_DMA_DEMO.axf
